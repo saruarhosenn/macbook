@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Initial meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <meta name="description" content="A simple, responsive product page on macbook pro with javascript DOM">
+    <meta name="keywords" content="DOM,javascript, ecommerce">
+    <meta name="author" content="Babul Akter">
+    <meta name="publisher" content="Babul Akter">
+    <meta name="copyright" content="Babul Akter">
+    <meta name="description" content="A simple, responsive product page on macbook pro with javascript DOM">
+    <meta name="page-topic" content="Media">
+    <meta name="page-type" content="ecommerce prodcut page">
+    <meta name="audience" content="Everyone">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/fav.png">
+
+    <!-- bootstrap style cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Buy Online | Mac Book Pro</title>
+    
+</head>
+<body>
+    <!-- Main starts-->
+    <main>
+     <!-- Mac book product starts -->
+     <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-12">
+                    <div>
+                        <img src="./images/mac.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12">
+                    <div>
+                        <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                        <p>Apple M1 chip with 8-core CPU with performance cores and 4 efficiency cores, 7-core GPU,and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB4 ports Mouse Magic Keyboard - US English.</p>
+                    </div>
+                    <!-- Memory Selection  -->
+                    <div class="my-5">
+                        <h3>Memory</h3>
+                        <button id="free-memory" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button id="cost-memory" class="btn btn-outline-secondary">16GB unified memory</button>
+                    </div>
+                    <!-- Storage Selection -->
+                    <div class="my-5">
+                        <h3>Storage</h3>
+                        <button id="ssd-256gb" class="btn btn-outline-secondary">256GB SSD storage</button>
+                        <button id="ssd-512gb" class="btn btn-outline-secondary">512GB SSD storage</button>
+                        <button id="ssd-1tb" class="btn btn-outline-secondary">1Tb SSD storage</button>
+                    </div>
+                    <!-- Delivery Charge Selection -->
+                    <div class="my-5">
+                        <h3>Choose your delivery option</h3>
+                        <button id="free-delivery" class="btn btn-outline-secondary">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="cost-delivery" class="btn btn-outline-secondary">Friday,Aug 21 Delivery charge $20</button>
+                    </div>
+                    <div class="my-5">
+                        <table class="table w-50">
+                            <tbody class="fw-bold">
+                                <tr>
+                                    <td>Best Price</td>
+                                    <td>$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Memory Cost</td>
+                                    <td>$<span id="extra-memory-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Extra Storage Cost</td>
+                                    <td>$<span id="extra-storage-cost">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Charge</td>
+                                    <td>$<span id="delivery-charge">0</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="fw-bold fs-5">
+                                <tr>
+                                    <td>Total Price</td>
+                                    <td>$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- Apply Promo Code  -->
+                    <div>
+                        <span class="my-3 fw-bolder">Add Promo Code</span>
+                       
+                        <input id="promo-input" class="p-1" type="text" placeholder="type 'stevekaku'">
+                        <button id="applyButton" onclick="promoCode()" class="btn btn-danger py-2 px-4">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Payable Total Bill  -->
+        <div class="container text-center">
+            <h2>Total : $<span id="total">1299</span></h2>
+        </div>
+    </section>
+        <!-- Mac book product ends -->
+    </main>
+    <!-- Main ends -->
+    <!-- bootstrap javascript cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- external main script link -->
+    <script src="main.js"></script>
+</body>
+</html
